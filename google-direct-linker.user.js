@@ -14,9 +14,9 @@
         var link = links[i];
         if (link.hasAttribute("onmousedown")) {
             link.removeAttribute("onmousedown");
-            if(link.removeEventListener){
+            if (link.removeEventListener) {
                 link.removeEventListener("mousedown", link.onmousedown, false);
-            }else if(link.detachEvent){
+            } else if(link.detachEvent) {
                 link.detachEvent("onmousedown", link.onmousedown);
             }
         }
